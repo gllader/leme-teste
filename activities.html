@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./public/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./public/styles/activities.css">
+  <title>Atividades</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html"><img src="./public/images/logo-leme.svg" alt="Leme Forense"></a>
+      <p>É um lindo dia no mar!</p>
+      <h1>Atividades</h1>
+    </header>
+    <section class="filter-menu">
+      <h3>Filtrar atividades</h3>
+      <form onsubmit="return false;">
+        <div class="menu-item">
+          <p>Nome da atividade</p>
+          <label for="aName"></label>
+          <input type="text" placeholder="Nome da atividade" name="aName">
+        </div>
+        <div class="menu-item">
+          <p>Tipo da atividade</p>
+          <label for="aType"></label>
+          <select name="aType" id="aType">
+            <option value="esporte">Esporte</option>
+            <option value="atividade">Atividade</option>
+            <option value="passeio">Passeio</option>
+          </select>
+        </div>
+        <div class="menu-item">
+          <p>Data da atividade</p>
+          <input type="text" placeholder="Data início">
+          <span class="date">Até</span>
+          <input type="text" placeholder="Data fim">
+        </div>
+        <div class="menu-item vagas">
+          <p>Vagas Disponíveis</p>
+          <button class="switch-button active"></button>
+        </div>
+      </form>
+    </section>
+    <section class="results">
+      <table>
+        <tr>
+          <th>&nbsp;</th>
+          <th>Nome</th>
+          <th>Tipo</th>
+          <th>Data</th>
+          <th>Vagas disponíveis</th>
+          <th>&nbsp;</th>
+        </tr>
+        <tr>
+          <td><img src="./public/images/passeios.jpg" alt=""></td>
+          <td>Trilha em Morretes</td>
+          <td><span class="activity ride">Passeio</span></td>
+          <td>03/09/21</td>
+          <td>3 vagas disponíveis</td>
+          <td><a href="activity.html"><span><img src="./public/images/plus.svg" alt="plus"></span>Ver detalhes</a></td>
+        </tr>
+        <th>&nbsp;</th>
+        <tr>
+          <td><img src="./public/images/volei.jpg" alt=""></td>
+          <td>Volei de praia</td>
+          <td><span class="activity sport">Esporte</span></td>
+          <td>07/09/21</td>
+          <td>1 vagas disponíveis</td>
+          <td><a><span><img src="./public/images/plus.svg" alt="plus"></span>Ver detalhes</a></td>
+        </tr>
+        <th>&nbsp;</th>
+        <tr>
+          <td><img src="./public/images/atividades.jpg" alt=""></td>
+          <td>Mergulho Lagoa Azul</td>
+          <td><span class="activity atividade">Atividade</span></td>
+          <td>03/09/21</td>
+          <td><span class="esgotado">esgotado</span></td>
+          <td><a><span><img src="./public/images/plus.svg" alt="plus"></span>Ver detalhes</a></td>
+        </tr>
+        <th>&nbsp;</th>
+        <tr>
+          <td><img src="./public/images/basquete.jpg" alt=""></td>
+          <td>Campeonato de basquete</td>
+          <td><span class="activity sport">Esporte</span></td>
+          <td>11/09/21</td>
+          <td>7 vagas disponiveis</td>
+          <td><a><span><img src="./public/images/plus.svg" alt="plus"></span>Ver detalhes</a></td>
+        </tr>
+        <th>&nbsp;</th>
+        <tr>
+          <td><img src="./public/images/passeio.jpg" alt=""></td>
+          <td>Passeio de barco ilha do mel</td>
+          <td><span class="activity ride">Passeio</span></td>
+          <td>23/09/21</td>
+          <td><span class="esgotado">esgotado</span></td>
+          <td><a><span><img src="./public/images/plus.svg" alt="plus"></span>Ver detalhes</a></td>
+        </tr>
+        <th>&nbsp;</th>
+        <tr>
+          <td><img src="./public/images/surf.jpg" alt=""></td>
+          <td>Surf em Matinhos</td>
+          <td><span class="activity atividade">Atividade</span></td>
+          <td>29/09/21</td>
+          <td>20 vagas disponiveis</td>
+          <td><a><span><img src="./public/images/plus.svg" alt="plus"></span>Ver detalhes</a></td>
+        </tr>
+      </table>
+    </section>
+    <footer>
+      <hr>
+      <p>© LEME Inteligência Forense - Todos os direitos reservados 2021</p>
+    </footer>
+  </div>
+</body>
+<script src="./public/scripts/scripts.js"></script>
+</html>

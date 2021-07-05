@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'Bellefair';
+  src: url(../fonts/Bellefair-Regular.otf);
+}
+@font-face {
+  font-family: 'CooperHewitt-Book';
+  src: url(../fonts/CooperHewitt-Book.otf);
+}
+@font-face {
+  font-family: 'CooperHewitt-Medium';
+  src: url(../fonts/CooperHewitt-Medium.otf);
+}
+:root {
+  --color-primary-red: #E5695B;
+  --color-secondary-blue: #22425C;
+  --color-light-white: #F6F5F6;
+  --color-light-text: #4B535B;
+  --color-activity: #A1ADB9;
+  --color-ride: #4C657A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-light-white);
+  font-family: 'CooperHewitt-Book';
+}
+
+.logo {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container {
+  margin: 20px 100px;
+  display: grid;
+  justify-content: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  border: 1px solid #CACBCE;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 8px;
+}
+
+.image {
+  background: url(../images/passeios.jpg) no-repeat center center / cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+}
+
+.details {
+  padding: 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #4B535B
+}
+
+.item div:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  color: #4B535B;
+  padding: 6px 0;
+}
+
+.item div:nth-child(even) {
+  color: var(--color-light-text);
+  padding: 6px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #00000029;
+}
+
+.activity {
+  border: 1px solid #00000029;
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 16px;
+  color: var(--color-light-white);
+  font-weight: bold;
+  background-color: var(--color-ride);
+}
+
+.item a {
+  display: grid;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 25px;
+  margin-top: 15px;
+  background-color: var(--color-primary-red);
+  color: var(--color-light-white);
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s filter;
+}
+
+.item a:hover {
+  filter: saturate(120%);
+}
+
+@media (max-width: 667px) {
+  .container {
+    margin: 0 auto;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+  }
+}
